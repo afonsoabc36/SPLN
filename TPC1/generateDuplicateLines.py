@@ -9,7 +9,7 @@ def generateLines(outputFile, size):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate randomly duplicate lines in a file.")
-    parser.add_argument("size", nargs="?", default=50, help="Number of unique lines (default: 50)")
+    parser.add_argument("size", nargs="?", type=int, default=50, help="Number of unique lines (default: 50)")
     parser.add_argument("outputFile", nargs="?", default="input.txt", help="Output file (default: input.txt)")
 
     args = parser.parse_args()
